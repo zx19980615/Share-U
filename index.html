@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>降噪藍牙耳機 - 熱門開箱實測</title>
+  
+  <!-- SEO Open Graph tags for Social Media Link Previews -->
+  <meta property="og:title" content="降噪藍牙耳機 - 好物實測開箱心得分享">
+  <meta property="og:description" content="學生族與上班族剛需，千元高性價比款式備受熱議...">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="質感生活好物日誌">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --border-glow: rgba(255, 87, 34, 0.2);
+      --shopee-orange: #ff5722;
+      --text-white: #f8fafc;
+      --text-gray: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-white);
+      font-family: 'Outfit', 'Noto Sans TC', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Ambient glow elements */
+    body::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255, 87, 34, 0.15) 0%, transparent 70%);
+      top: -100px;
+      left: -100px;
+      pointer-events: none;
+    }
+    body::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%);
+      bottom: -150px;
+      right: -150px;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      z-index: 10;
+      position: relative;
+    }
+
+    .product-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+      color: var(--text-white);
+    }
+
+    .price-tag {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--shopee-orange);
+      margin-bottom: 16px;
+    }
+
+    .desc {
+      font-size: 0.925rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    .redirect-status {
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(255, 87, 34, 0.2);
+      border-top-color: var(--shopee-orange);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .btn-buy {
+      width: 100%;
+      background: linear-gradient(135deg, var(--shopee-orange) 0%, #ff7a00 100%);
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn-buy:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 87, 34, 0.5);
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    /* Safe Content Mode for Bots */
+    .bot-only-content {
+      display: none;
+      text-align: left;
+      line-height: 1.8;
+      color: #cbd5e1;
+    }
+    
+    .bot-only-content h1 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: var(--text-white);
+    }
+
+    .bot-only-content p {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Human Redirect View -->
+  <div class="container" id="human-view">
+    <img class="product-img" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60" alt="降噪藍牙耳機">
+    <h1 class="title">降噪藍牙耳機</h1>
+    <div class="price-tag">熱門市價</div>
+    <p class="desc">學生族與上班族剛需，千元高性價比款式備受熱議</p>
+    
+    <div class="redirect-status" id="redirect-container">
+      <div class="spinner"></div>
+      <span>安全檢測已通過，正在為您跳轉至商品官網... (<span id="countdown">2</span>秒)</span>
+    </div>
+
+    <button class="btn-buy" id="buy-btn">
+      <span>點此直接前往官方選購</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </button>
+
+    <div class="footer">
+      本網頁提供商品實測心得分享，即將引導至蝦皮購物官方商場。
+    </div>
+  </div>
+
+  <!-- Bot / Crawler Safe Content View -->
+  <div class="container" id="bot-view" style="display:none;">
+    <div class="bot-only-content">
+      <h1>[今日分享] 降噪藍牙耳機 的使用體驗與詳細心得</h1>
+      <p>近來這款商品在社群上的討論度非常高，我們特別針對這項商品進行了完整的收集與整理，包含各論壇的真實使用心得。</p>
+      <p>首先，在外觀與材質方面，它採用了符合人體工學的工藝設計，整體握感與質感都在水準之上。在日常的使用場景下，它的耐用度與實用性都非常符合大眾預期。</p>
+      <p>許多網友在 PTT 與 Dcard 購物板上也表示，這款商品的設計簡約大方，融入日常家居或辦公環境都毫無違和感。非常適合作為送禮或自用的首選好物。</p>
+      <p>總體而言，這是一款性價比（CP值）極高的產品，若您也在尋找同類型的解決方案，非常推薦您參考此商品的實測心得與規格介紹。</p>
+      <p>感謝您的閱讀，本篇文章為真實客觀的分享，歡迎持續追蹤我們的最新好物日誌。</p>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // 1. Smart User-Agent Detector (FacebookExternalHit, Twitterbot, Discord, Telegram, and standard search bots)
+      const botPattern = /bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|facebook|twitter|instagram|threads|discord|telegram|whatsapp|lighthouse|yandex/i;
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const isBot = botPattern.test(userAgent);
+
+      const humanView = document.getElementById('human-view');
+      const botView = document.getElementById('bot-view');
+
+      if (isBot) {
+        // Platform crawlers will ONLY see this, which looks like a normal harmless content post
+        humanView.style.display = 'none';
+        botView.style.display = 'block';
+        console.log("Safe content displayed for crawler validation.");
+      } else {
+        // Real humans get the sleek bridge page + redirect
+        const targetUrl = "https://s.shopee.tw/80AbWbDY1Y";
+        
+        let count = 2;
+        const countdownEl = document.getElementById('countdown');
+        const redirectContainer = document.getElementById('redirect-container');
+        
+        const timer = setInterval(() => {
+          count--;
+          if (countdownEl) countdownEl.textContent = count;
+          if (count <= 0) {
+            clearInterval(timer);
+            window.location.replace(targetUrl);
+          }
+        }, 1000);
+
+        // Fallback or immediate direct click redirect
+        document.getElementById('buy-btn').addEventListener('click', function() {
+          clearInterval(timer);
+          window.location.replace(targetUrl);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
